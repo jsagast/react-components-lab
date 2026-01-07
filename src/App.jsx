@@ -1,5 +1,6 @@
 import WeatherForecast from "./components/WeatherForecast/WeatherForecast";
 
+
 const App = () => {
   const weatherForecasts = [
   {
@@ -40,12 +41,24 @@ const App = () => {
   ];
 
 
-  return (
+  // return (
+  //   <>
+  //     <h1>Local Weather</h1>
+  //     <section>
+  //       {weatherForecasts.map ((forecast, index)=>(
+  //         <WeatherForecast key={index}{...forecast} />
+  //       ))}
+  //     </section>
+  //   </>
+  // );
+
+  // Refactoring for subcomponents
+    return (
     <>
       <h1>Local Weather</h1>
       <section>
         {weatherForecasts.map ((forecast, index)=>(
-          <WeatherForecast key={index}{...forecast} />
+          <WeatherForecast forecast={forecast}/>
         ))}
       </section>
     </>

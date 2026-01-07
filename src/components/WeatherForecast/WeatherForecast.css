@@ -1,3 +1,8 @@
+body{
+  justify-content: center;
+  background-color: rgb(67, 171, 177);
+}
+
 section {
   display: flex;
 }
@@ -11,4 +16,8 @@ section .weather {
 
 .weather span {
   font-weight: bold;
+}
+
+h1 {
+  text-align: center;
 }
